@@ -1,0 +1,129 @@
+body {
+  /* width: 10px; */
+  /* background-color: red; */
+  display: flex;
+  /* padding: 0 20vw; */
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+.calc {
+  /* margin: auto; */
+  /* transform: translate(60%, 60%); */
+  text-align: center;
+  width: 40vw;
+  height: 50%;
+  margin: 10px;
+
+  font-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  border-radius: 2px;
+  position: relative;
+  transition: background 1s;
+}
+@keyframes gradiant {
+  from {
+    --angle: 0deg;
+    background-position: 100%;
+  }
+  to {
+    --angle: 360deg;
+    background-position: 200%;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+@property --direction {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: top;
+}
+.calc:hover {
+  background-image: conic-gradient(
+    from var(--angle) at top center,
+    rgb(238, 235, 235) 10%,
+    rgb(58, 55, 55),
+    transparent,
+    black
+  );
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  /* -webkit-text-fill-color: transparent; */
+  /* animation: gradiant 3s infinite reverse; */
+  /* background-size: 200%; */
+
+  animation: gradiant 1s linear infinite alternate-reverse;
+}
+@keyframes direction {
+  10% {
+    --direction: bottom;
+  }
+  20% {
+    --direction: top;
+  }
+  30% {
+    --direction: left;
+  }
+  40% {
+    --direction: right;
+  }
+}
+/* 
+.calc::after {
+  background: conic-gradient(
+    from var(--angle) at center,
+    rgba(133, 149, 156, 0.7),
+    transparent,
+    rgba(27, 33, 37, 0.7),
+    transparent,
+    rgba(40, 48, 65, 0.7)
+  );
+  width: 40vw;
+  height: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+} */
+.calc .result {
+  width: calc(100% - 10px);
+  height: 14vh;
+  background: linear-gradient(
+    to left,
+    white,
+    rgb(189, 182, 182),
+    transparent,
+    black
+  );
+  background: linear-gradient(
+    to left,
+    rgb(238, 235, 235),
+    rgb(58, 55, 55),
+    transparent,
+    black
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradiant 1s infinite reverse;
+  background-size: 200%;
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+}
+
+.calc .digits {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 10px 10px 10px;
+  text-align: center;
+  gap: 7px;
+}
