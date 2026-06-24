@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   animation: translate 4s linear;
   width: 100%;
+  margin: auto;
   /* animation-delay: 1s; */
 }
 ::selection {
@@ -27,6 +28,8 @@ body {
   padding: 0 2vw;
   top: 0vw;
   font-size: 1.5rem;
+  margin: auto;
+
   font-weight: bold;
   color: white;
   z-index: 100;
@@ -64,7 +67,8 @@ body {
   /* padding: 5vw 5vw; */
   display: flex;
   text-align: center;
-  margin: 100px;
+  margin: 200px auto;
+
   height: fit-content;
   position: relative;
   /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
@@ -395,10 +399,10 @@ h1 {
 
 .card:hover {
   box-shadow:
-    1px 1px 60px #072b55,
-    -1px 1px 50px #072b55;
+    1px 1px 100px #072b55,
+    -1px 1px 100px #072b55;
   /* transform: scale(1.099); */
-  transform: translatey(-20px);
+  transform: translatey(-30px);
 }
 .card i {
   font-size: 50px;
@@ -835,15 +839,16 @@ textarea:focus {
     align-content: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     margin: auto;
     width: 30vw;
+
     height: 100px;
     padding: 0;
   }
   .card > * {
     width: 60vw;
-    text-align: center;
+    /* text-align: center; */
     gap: 0;
     padding: 0;
     margin: 0;
@@ -856,6 +861,7 @@ textarea:focus {
   }
   .card p {
     margin-bottom: 10px;
+    text-align: start;
   }
 
   .card .img,
@@ -870,22 +876,29 @@ textarea:focus {
   .parent-list,
   .parent-card {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 10px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     /* width: fit-content; */
     /* width: 400px; */
     height: fit-content;
   }
-  .parent-card {
+  .parent-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     /* gap: 100px; */
   }
   .card > * {
-    width: 334px;
+    width: fit-content;
     margin: 10px;
-    padding: 10px;
+    /* padding: f; */
+  }
+  .card i {
+    font-size: 1.9rem;
   }
   .parent-list {
     /* margin: auto; */
@@ -926,7 +939,7 @@ textarea:focus {
     width: 100%;
     margin: 18.72px 0px;
   }
-  .skill {
+  .left .skill {
     display: flex;
     width: 100%;
 
@@ -991,5 +1004,8 @@ textarea:focus {
     /* width: 100%; */
     width: 60vw;
     text-align: center;
+  }
+  .btn {
+    height: 4vh;
   }
 }
