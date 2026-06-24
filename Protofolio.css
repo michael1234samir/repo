@@ -1,14 +1,20 @@
 body {
   background-color: #081c29;
   color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   animation: translate 4s linear;
+  width: 100%;
   /* animation-delay: 1s; */
 }
 ::selection {
 }
-.navbar {
+#navbar {
   /* background-color: black; */
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   background-color: #081c29;
   z-index: -2;
   position: sticky;
@@ -34,8 +40,11 @@ body {
   padding: 20px 10%;
 }
 
-.items p {
+.items li a {
   cursor: pointer;
+  cursor: pointer;
+  text-decoration: dotted;
+  color: white;
   border-radius: 20px;
   /* width: 40px; */
   /* height: 40px; */
@@ -44,19 +53,26 @@ body {
   padding: 10px;
   transition: all 0.5s;
 }
-
+.items li {
+  list-style: none;
+}
 .logo {
   font-size: 2rem;
 }
 .section1 {
   /* margin-top: 10vw; */
-  padding: 5vw 5vw;
+  /* padding: 5vw 5vw; */
   display: flex;
+  text-align: center;
+  margin: 100px;
+  height: fit-content;
   position: relative;
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
   /* gap: 50%; */
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
 }
+
 .section1 .left {
   display: flex;
   /* font-size: 2.5rem; */
@@ -158,7 +174,8 @@ blue {
   transition: all 1s;
 }
 .btn:hover,
-.items p:hover {
+.items p:hover,
+.items li a:hover {
   box-shadow:
     0px 0px 5px #4ee3ed,
     0px 0px 25px #4ee3ed,
@@ -295,12 +312,17 @@ blue {
 }
 .section2 {
   display: flex;
+  /* position: relative; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
   padding: 10vw;
+
+  /* flex-basis: 1 1; */
   justify-content: space-between;
   align-content: center;
 }
 .AboutMe {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -320,7 +342,10 @@ blue {
   /* height: 100%; */
   /* padding: 10vw; */
   margin: auto;
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  /* position: relative; */
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   text-align: center;
   flex-direction: column;
   justify-content: space-around;
@@ -338,14 +363,19 @@ h1 {
 .parent-list {
   display: flex;
   animation: slidebottom 1s ease;
-
+  display: grid;
+  position: relative;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   padding: 2vw 10vw 10vw 10vw;
   justify-content: space-around;
   /* gap: 3vw; */
   align-items: center;
 }
 .card {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   width: fit-content;
   text-align: start;
   height: fit-content;
@@ -359,9 +389,10 @@ h1 {
     -1px 1px 30px #072b55;
   align-items: start;
   border-radius: 2vw 2vw;
-  animation: slidebottom 2s ease;
+  /* animation: slidebottom 2s ease; */
   transition: transform 1s;
 }
+
 .card:hover {
   /* transform: scale(1.099); */
   transform: translatey(-10px);
@@ -409,6 +440,9 @@ p {
 }
 .section4 {
   display: flex;
+  margin: 100px;
+  /* position: relative; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
   flex-direction: column;
 
   justify-content: center;
@@ -421,7 +455,10 @@ p {
   text-align: center;
 }
 .both {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
+
   justify-content: space-between;
   align-content: center;
   /* width: 60%; */
@@ -429,7 +466,9 @@ p {
   gap: 20vw;
 }
 .left {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   width: 20vw;
   flex-direction: column;
   justify-content: center;
@@ -441,13 +480,17 @@ p {
   border-bottom: 5px solid white;
 }
 .skill {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 .skilln {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   width: 100%;
   margin: 10px 0;
   height: 1vw;
@@ -455,6 +498,9 @@ p {
   align-content: center;
 }
 .precentage {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   background-color: #4ee3ed;
   width: 14vw;
   height: 0.5vh;
@@ -464,20 +510,30 @@ p {
 }
 .precens {
   display: grid;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   /* padding: 4vw; */
   flex-wrap: wrap;
   gap: 50px;
   padding: 3vw 0;
-  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 .precen {
-  display: flex;
+  display: grid;
+  position: relative;
+  width: fit-content;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
 }
 .el {
   text-align: center;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,7 +543,9 @@ p {
   border-radius: 50% 50%;
 }
 .latest {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
@@ -525,7 +583,9 @@ p {
   left: 0;
   background: linear-gradient(to top, #4ee3ed, transparent);
   height: 0;
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: center;
   align-content: space-around;
@@ -552,8 +612,11 @@ p {
 }
 .Contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* flex-direction: row; */
+  position: relative;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 50%), 1fr)
+  ); /* flex-direction: row; */
   justify-content: center;
   align-content: center;
   padding: 10vw;
@@ -561,7 +624,9 @@ p {
   align-content: space-between;
 }
 .contactleft {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: space-around;
   width: 30vw;
@@ -579,7 +644,9 @@ p {
 }
 
 .contactinside {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   /* text-align: start; */
   /* gap: 2vw; */
   flex-direction: column;
@@ -589,13 +656,17 @@ p {
   /* padding: 1.5vw; */
 }
 .socialme {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
 }
 .contactright {
-  display: flex;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
@@ -668,5 +739,195 @@ textarea:focus {
   }
   to {
     --angle: 360deg;
+  }
+}
+@media (max-width: 1400px) {
+  body {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    /* width: 100%; */
+  }
+  .section1 .left {
+    width: 100vw;
+    text-align: center;
+  }
+  .section1 .left > h4,
+  h2 {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+  }
+  .left > * {
+    text-align: center;
+    margin: auto;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .latest,
+  .Contact {
+    /* padding: 20vw; */
+    text-align: center;
+    display: flex;
+    width: 60vw;
+    /* margin: 10px; */
+    gap: 5vw;
+    margin-bottom: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: red; */
+  }
+  form {
+    width: 60vw;
+  }
+  .section1 .image {
+    order: -1;
+    margin-top: 0;
+  }
+  .section4 {
+    display: flex;
+    /* margin: 10px; */
+    padding: 10px;
+  }
+  .section1 .left,
+  .section1 .left,
+  .AboutMe,
+  .image {
+    /* width: 100%; */
+  }
+  .image {
+    margin-top: 100px;
+  }
+  .card {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: fit-content;
+    height: 100px;
+    padding: 0;
+  }
+  .card > * {
+    width: 60vw;
+    text-align: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  .card > * {
+    margin: 0;
+    width: 80vw;
+    gap: 10px;
+  }
+  .card p {
+    margin-bottom: 10px;
+  }
+
+  .card .img,
+  .card h3 {
+    margin-bottom: 25px;
+    padding: 0;
+    height: 20px;
+  }
+  .card img i {
+    font-size: 0.4rem;
+  }
+  .parent-list,
+  .parent-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    /* width: 400px; */
+    height: fit-content;
+  }
+  .parent-card {
+    gap: 100px;
+  }
+  .parent-list {
+    gap: 200px;
+  }
+  .contactleft,
+  .contactinside,
+  .contactright {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .socialme {
+    display: flex;
+    text-align: center;
+  }
+  .section4 .both {
+    display: flex;
+    margin: 10px;
+    /* gap: 10px; */
+  }
+  .both .left,
+  .both .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    justify-content: start;
+  }
+  .both .left h3 {
+    width: 154px;
+    margin: 18.72px 0px;
+  }
+  .skill {
+    display: flex;
+    width: 200px;
+
+    margin: 0;
+    flex-direction: column;
+    text-align: start;
+  }
+  .precentage {
+    width: 200px;
+  }
+  .skilln {
+    display: flex;
+  }
+  .section4 {
+    display: flex;
+    margin: 10vw;
+  }
+  .card {
+    height: 10vw;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .card1,
+  .card2 {
+    height: 100px;
+  }
+  /* .section3 {
+    height: 100px;
+    overflow: hidden;
+  } */
+  .contactleft,
+  .contactright {
+    /* width: 100%; */
+    width: 60vw;
   }
 }
