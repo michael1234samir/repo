@@ -987,4 +987,550 @@ p {
 .card2:hover .layer {
   height: 100%;
 }
-.layer h
+.layer h5 {
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.layer p {
+  color: white;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.Contact {
+  display: flex;
+  /* position: relative; */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 50%), 1fr)
+  ); /* flex-direction: row; */
+  justify-content: center;
+  align-content: center;
+  padding: 10vw;
+  gap: 20px;
+  align-content: space-between;
+}
+.contactleft {
+  display: flex;
+  /* position: relative; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30vw;
+  /* text-align: center; */
+  /* align-self: flex-end; */
+  justify-self: flex-start;
+  /* gap: 10vw; */
+
+  align-content: space-around;
+}
+.contactleft h3 {
+  /* margin: auto; */
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.contactinside {
+  display: flex;
+  /* position: relative; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
+  /* text-align: start; */
+  /* gap: 2vw; */
+  flex-direction: column;
+  text-align: start;
+
+  justify-content: space-between;
+  /* width: 50%; */
+  align-content: space-between;
+  /* padding: 1.5vw; */
+}
+.socialme {
+  display: flex;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-content: center;
+}
+.contactright {
+  display: flex;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-self: flex-start;
+  justify-self: flex-start;
+  /* gap: 10px; */
+  width: 35vw;
+}
+
+form input,
+form textarea {
+  outline: none;
+  width: 90%;
+  /* font-size: 2rem; */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0.5vw;
+}
+input {
+  background-color: #555557;
+  /* width: 30vw; */
+  height: 2.5vw;
+  border-radius: 0.5vw;
+  border: none;
+}
+textarea {
+  background-color: #555557;
+  /* width: 30vw; */
+  /* height: 10vw; */
+  /* border-radius: 0.5vw; */
+
+  height: 10vw;
+}
+.contactright .btn {
+  display: block;
+  width: 95%;
+  height: 3vw;
+  /* width: 100vw; */
+}
+input:focus,
+textarea:focus {
+  box-shadow:
+    0px 0px 25px #4ee3ed,
+    0px 0px 50px #4ee3ed,
+    0px 0px 100px #4ee3ed,
+    0px 0px 200px #4ee3ed;
+  border-radius: 25px;
+  background-color: #e8f0fe;
+}
+.thanks {
+  width: 100%;
+  padding: 2vw;
+  height: 1vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  background: conic-gradient(from var(--angle), #8d3b84, transparent, #4ee3ed);
+  animation: gradiant 3s infinite alternate-reverse linear;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+@keyframes gradiant {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@media (max-width: 1400px) {
+  * {
+    /* margin: 1vw; */
+    /* font: 2em; */
+    /* line-height: 1.5em; */
+  }
+  body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* display:; */
+    line-height: 1.5em;
+    padding: 0;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    margin: 0;
+    grid-template-columns: 100vw;
+    /*  */
+    text-align: center;
+    /* width: 100%; */
+  }
+  .section1 .left {
+    width: 100vw;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    text-align: center;
+  }
+
+  .section1 .left > h4,
+  .section1 .left > h2 {
+    width: 100%;
+    /* gap: 10px; */
+    text-align: center;
+    padding: 10px;
+  }
+  .left > * {
+    /* width: 100%; */
+    padding-left: 1vw;
+    text-align: center;
+    margin: auto;
+  }
+  .left p {
+    width: 300px;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .latest,
+  .Contact {
+    /* padding: 20vw; */
+    text-align: center;
+    display: 1fr;
+    width: 60vw;
+    /* width: 60vw; */
+    /* margin: 10px; */
+    gap: 5vw;
+    padding: 10vw 10vw 0vw 30vw;
+
+    margin-bottom: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    /* background: red; */
+  }
+  #navbar ul {
+    /* width: 40px; */
+    margin: 0;
+    padding: 0;
+  }
+  #navbar {
+    padding-right: 50px;
+    /* width: 40px; */
+  }
+  #navbar ul li {
+    padding-left: 15px;
+  }
+  form {
+    width: 60vw;
+  }
+  .section1 .image {
+    order: -1;
+    margin: auto;
+    margin-top: 0;
+  }
+  .section4 {
+    display: flex;
+    /* padding: 10vw 10vw 0vw 30vw; */
+    /* padding: 10vw; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    margin: auto;
+  }
+
+  .both {
+    flex-direction: column;
+    /* width: 50vw; */
+    margin: 0px;
+    /* margin: auto; */
+    justify-content: center;
+    text-align: center;
+  }
+  .both .left,
+  .both .right {
+    /* width: 100vw; */
+    margin: auto;
+  }
+  .section1 .left,
+  .section1 .left {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    /* width: 100%; */
+  }
+  .image {
+    margin-top: 100px;
+  }
+  .card {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin: auto;
+    width: 30vw;
+
+    height: 100px;
+    padding: 0;
+  }
+  .card > * {
+    width: 60vw;
+    /* text-align: center; */
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  .card > * {
+    margin: 0;
+    width: 80vw;
+    gap: 10px;
+  }
+  .section1 .btn {
+    width: 50vw;
+  }
+  .card p {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .card .img,
+  .card h3 {
+    margin-bottom: 25px;
+    padding: 0;
+    height: 20px;
+  }
+  .card .btn {
+    height: 6vh;
+  }
+  .card img i {
+    font-size: 0.4rem;
+  }
+  .parent-list,
+  .parent-card {
+    display: flex;
+    /* flex-direction: column; */
+    /* margin: 10px; */
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* width: fit-content; */
+    /* width: 400px; */
+    height: fit-content;
+  }
+  .parent-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* gap: 100px; */
+  }
+  .card > * {
+    width: fit-content;
+    margin: 10px;
+    /* padding: f; */
+  }
+  .card i {
+    font-size: 1.9rem;
+  }
+  .parent-list {
+    /* margin: auto; */
+    /* padding: 10vw; */
+    width: 50vw;
+    gap: 20px;
+  }
+  .contactleft,
+  .contactinside,
+  .contactinside,
+  .contactright {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .socialme {
+    display: flex;
+    text-align: center;
+  }
+  .section4 .both {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    /* gap: 10px; */
+  }
+  .both .left,
+  .both .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    /* width: 200px; */
+    justify-content: center;
+  }
+  .both .left h3 {
+    width: 100%;
+    margin: 18.72px 0px;
+  }
+  .left .skill {
+    display: flex;
+    width: 100%;
+
+    margin: 0;
+    flex-direction: column;
+    text-align: start;
+  }
+  .precentage {
+    width: 100%;
+  }
+  .both .precens {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* height: auto; */
+    /* flex-direction: column; */
+  }
+  .skilln {
+    display: flex;
+  }
+  .section4 {
+    display: flex;
+    /* margin: 10vw; */
+  }
+  .precen,
+  .el {
+    width: 100px;
+    height: 100px;
+  }
+  .card {
+    /* height: 10vw; */
+    height: fit-content;
+    width: 334px;
+    padding: 40px;
+    text-align: center;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .card1,
+  .card2 {
+    /* height: fit-content; */
+    width: 334px;
+    margin: 100px;
+  }
+  .layer {
+    width: 334px;
+  }
+  .contactinside {
+    text-align: center;
+  }
+  /* .section3 {
+    height: 100px;
+    overflow: hidden;
+  } */
+  .contactleft,
+  .contactright {
+    /* width: 100%; */
+    width: 60vw;
+    text-align: center;
+  }
+  .btn {
+    height: 4vh;
+  }
+  input {
+    height: 50px;
+  }
+  textarea {
+    height: 30vh;
+  }
+  .section4 {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    display: grid;
+    width: 100%;
+    padding: 10vw;
+    text-align: center;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .sections {
+    /* padding: 2em 1em 60px 1em; */
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .Contact {
+    border: none;
+    width: 100%;
+    padding: 0;
+    > *:not(.image) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  #navbar {
+    height: fit-content;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid var(--line-clr);
+    padding: 0;
+    position: sticky;
+    bottom: 10px;
+    top: unset;
+    > ul {
+      width: 100%;
+
+      padding: 0;
+      display: grid;
+      grid-auto-columns: 60px;
+      grid-auto-flow: column;
+      align-items: center;
+      overflow-x: scroll;
+    }
+    ul li {
+      height: 100%;
+    }
+    ul a,
+    ul .dropwdown-btn {
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      border-radius: 0;
+      justify-content: center;
+    }
+    ul li span,
+    ul li:first-child,
+    .dropdown-btn svg:last-child {
+      display: none;
+    }
+    ul li .sub-menu.show {
+      position: fixed;
+      bottom: 60px;
+      left: 0;
+      box-sizing: border-box;
+      height: 60px;
+      width: 100%;
+      background-color: var(--hover-clr);
+      border-top: 1px solid var(--line-clr);
+      display: flex;
+      justify-content: center;
+      > div {
+        overflow-x: auto;
+      }
+      li {
+        display: inline-flex;
+      }
+      a {
+        box-sizing: border-box;
+        padding: 1em;
+        width: auto;
+        justify-content: center;
+      }
+    }
+  }
+}
