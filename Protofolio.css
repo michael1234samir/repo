@@ -1434,12 +1434,21 @@ form {
     /* width: 100%; */
     /* width: 1000px; */
     margin: 0;
+    margin-bottom: 10px;
     flex-direction: column;
     text-align: start;
+    /* border-left: 10px solid #8d3b84; */
+  }
+  .skilln {
+    margin-bottom: 0;
   }
   .precentage {
     height: 10px;
+    margin-top: 0;
     /* width: 100%; */
+  }
+  .skilln > * {
+    margin-bottom: 1;
   }
   .both .precens {
     width: 100%;
@@ -1527,17 +1536,17 @@ form {
     height: 80vh;
     text-align: center;
   }
-  .navbar.close ul {
+  #navbar.close ul {
     background-color: black;
   }
   .btn {
-    /* height: 4vh; */
+    height: 2vh;
   }
   input {
-    height: 50px;
+    height: 30px;
   }
   textarea {
-    height: 30vh;
+    height: 20vh;
   }
   .section4 {
     margin: 0;
