@@ -1523,12 +1523,15 @@ form {
 
     margin: auto;
     /* background-color: red; */
-    width: 90%;
-    height: 90vh;
+    width: 80%;
+    height: 80vh;
     text-align: center;
   }
+  .navbar.close ul {
+    background-color: black;
+  }
   .btn {
-    height: 4vh;
+    /* height: 4vh; */
   }
   input {
     height: 50px;
