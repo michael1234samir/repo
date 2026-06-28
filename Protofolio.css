@@ -1662,12 +1662,18 @@ form {
     display: flex;
     /* margin: 10vw; */
   }
+  .contact {
+    height: fit-content;
+  }
   .precen,
   .el {
     width: 100px;
     height: 100px;
   }
   .btn {
+    height: 3vh;
+  }
+  .card .btn {
     height: 3vh;
   }
   /* #navbar {
