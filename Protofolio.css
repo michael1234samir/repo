@@ -1015,12 +1015,13 @@ p {
   line-height: 1.8;
 }
 .contact {
-  display: grid;
+  display: flex;
   /* position: relative; */
-  grid-template-columns: repeat(
+  /* grid-template-columns: repeat(
     auto-fit,
     minmax(min(300px, 50%), 1fr)
-  ); /* flex-direction: row; */
+  ); 
+  flex-direction: row; */
   justify-content: center;
   align-content: center;
   padding: 10vw;
@@ -1065,7 +1066,8 @@ p {
 .socialme {
   display: flex;
   position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
+  width: 100%;
+  /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
   flex-direction: column;
   justify-content: center;
   text-align: start;
@@ -1087,12 +1089,15 @@ p {
 form input,
 form textarea {
   outline: none;
-  width: 90%;
+  width: 100%;
   /* font-size: 2rem; */
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   padding: 0.5vw;
+}
+.socials {
+  /* width: 100%; */
 }
 input {
   background-color: #555557;
@@ -1217,7 +1222,7 @@ form {
   .section3,
   .section4,
   .latest,
-  .Contact {
+  .contact {
     /* padding: 20vw; */
     text-align: center;
     display: 1fr;
@@ -1379,6 +1384,9 @@ form {
     /* width: 50vw; */
     /* gap: 20px; */
   }
+  .contact {
+    flex-direction: column;
+  }
   .contactleft,
   .contactinside,
   .contactinside,
@@ -1472,6 +1480,10 @@ form {
   .btn {
     width: 100%;
   }
+  .contactinside .socials {
+    /* transform: translateX(140%); */
+    text-align: center;
+  }
   .image {
     /* width: 300px; */
     margin-bottom: 100px;
@@ -1494,16 +1506,21 @@ form {
     height: 100px;
     overflow: hidden;
     } */
+  .contact {
+    text-align: center;
+  }
   .contactleft,
   .contactright {
     /* width: 100%; */
     /* width: 60vw; */
     margin: 0;
-    width: 70%;
+    /* width: 70%; */
     margin: auto;
     text-align: center;
   }
   .contactright {
+    padding: 10px;
+    width: 100%;
     text-align: center;
   }
   .btn {
@@ -1540,6 +1557,10 @@ form {
   }
   .image {
     width: 1pp;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 700px) {
