@@ -437,6 +437,9 @@ ul {
 .logo {
   font-size: 2rem;
 }
+.sections {
+  padding: 0 10vw;
+}
 .section1 {
   /* margin-top: 10vw; */
   /* padding: 5vw 5vw; */
@@ -706,7 +709,7 @@ blue {
   display: flex;
   /* position: relative; */
   /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr)); */
-  padding: 10vw;
+  /* padding: 10vw; */
 
   font-size: 1em;
   /* flex-basis: 1 1; */
@@ -762,7 +765,7 @@ h1 {
   position: relative;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 50%), 1fr));
-  padding: 2vw 10vw 10vw 10vw;
+  /* padding: 2vw 10vw 10vw 10vw; */
   justify-content: space-around;
   /* gap: 3vw; */
   align-items: center;
@@ -964,9 +967,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vw;
+  height: 25vw;
   text-align: center;
-  width: 30vw;
+  width: 40%;
   border-radius: 10vw;
   position: relative;
   background-color: transparent;
@@ -979,13 +982,13 @@ p {
 .layer {
   text-align: center;
   /* width: 20vw; */
-  height: 50%;
+  height: 60%;
   border-radius: 10vw 10vw 0 0;
   /* object-fit: cover; */
   background-position: 200%;
   /* height: 10vh; */
   transition: background 3s;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 
   width: 100%;
@@ -1006,12 +1009,12 @@ p {
 }
 .card1 .layer {
   background: url("./calc.png");
-  background-size: 30vw 18vw;
+  background-size: 100% 18vw;
   background-repeat: no-repeat;
 }
 .card2 .layer {
   background: url("./image.png");
-  background-size: 30vw 18vw;
+  background-size: 100% 18vw;
 
   background-repeat: no-repeat;
 }
@@ -1022,12 +1025,12 @@ p {
 .content {
   width: 100%;
   text-align: start;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
-  left: 10%;
-  height: 50%;
+  /* left: 10%; */
+  /* height: 50%; */
   display: flex;
-  font-size: 1vw;
+  /* font-size: 1vw; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1056,7 +1059,8 @@ p {
   flex-direction: row; */
   justify-content: center;
   align-content: center;
-  padding: 10vw;
+  /* padding: 10vw; */
+  margin-top: 100px;
   gap: 20px;
   align-content: space-between;
 }
@@ -1253,7 +1257,6 @@ form {
   .section2,
   .section3,
   .section4,
-  .latest,
   .contact {
     /* padding: 20vw; */
     text-align: center;
@@ -1270,6 +1273,7 @@ form {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 10vw;
     > * {
       width: 100%;
     }
@@ -1381,8 +1385,7 @@ form {
   .card img i {
     font-size: 0.4rem;
   }
-  .parent-list,
-  .parent-card {
+  .parent-list {
     display: grid;
     /* grid */
     /* grid-auto-columns: calc( 100% / 3px); */
@@ -1577,7 +1580,6 @@ form {
   .section3,
   .section4,
   .both,
-  .left .latest,
   .section4,
   .contact,
   .parent-list {
@@ -1759,5 +1761,32 @@ form {
     margin: auto;
     /* background-color: red; */
     width: 60%;
+  }
+  textarea {
+    height: 20vw;
+  }
+  input {
+    height: 10vw;
+  }
+  .card1,
+  .card2 {
+    overflow-x: hidden;
+    width: 60vw;
+    height: 40vw;
+    margin: 10px;
+  }
+  .layer {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 50%;
+    position: static;
+  }
+  .content {
+    width: 100%;
+    height: 30%;
+    position: static;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
   }
 }
