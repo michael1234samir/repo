@@ -547,7 +547,7 @@ blue {
 .btn {
   margin-top: 10px;
   width: fit-content;
-  height: 5vh;
+  height: 3vh;
   text-align: center;
   padding: 0.4vw 1vw;
   color: black;
@@ -1344,7 +1344,7 @@ form {
     height: 20px;
   }
   .card .btn {
-    height: 6vh;
+    height: 3vh;
   }
   .card img i {
     font-size: 0.4rem;
@@ -1434,21 +1434,12 @@ form {
     /* width: 100%; */
     /* width: 1000px; */
     margin: 0;
-    margin-bottom: 10px;
     flex-direction: column;
     text-align: start;
-    /* border-left: 10px solid #8d3b84; */
-  }
-  .skilln {
-    margin-bottom: 0;
   }
   .precentage {
     height: 10px;
-    margin-top: 0;
     /* width: 100%; */
-  }
-  .skilln > * {
-    margin-bottom: 1;
   }
   .both .precens {
     width: 100%;
@@ -1532,21 +1523,18 @@ form {
 
     margin: auto;
     /* background-color: red; */
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    height: 90vh;
     text-align: center;
   }
-  #navbar.close ul {
-    background-color: black;
-  }
   .btn {
-    height: 2vh;
+    height: 4vh;
   }
   input {
-    height: 30px;
+    height: 50px;
   }
   textarea {
-    height: 20vh;
+    height: 30vh;
   }
   .section4 {
     margin: 0;
@@ -1662,18 +1650,12 @@ form {
     display: flex;
     /* margin: 10vw; */
   }
-  .contact {
-    height: fit-content;
-  }
   .precen,
   .el {
     width: 100px;
     height: 100px;
   }
   .btn {
-    height: 3vh;
-  }
-  .card .btn {
     height: 3vh;
   }
   /* #navbar {
