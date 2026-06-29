@@ -985,7 +985,7 @@ p {
   background-position: 200%;
   /* height: 10vh; */
   transition: background 3s;
-  /* position: absolute; */
+  position: absolute;
   top: 0;
 
   width: 100%;
@@ -1022,8 +1022,8 @@ p {
 .content {
   width: 100%;
   text-align: start;
-  /* position: absolute; */
-  top: 60%;
+  position: absolute;
+  top: 50%;
   left: 10%;
   height: 50%;
   display: flex;
