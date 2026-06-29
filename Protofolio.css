@@ -960,6 +960,7 @@ p {
   text-align: center;
   align-content: center;
   padding: 3vw;
+
   margin: auto;
 }
 .slide-content {
@@ -967,7 +968,7 @@ p {
   margin: 0 40px;
 }
 .slide-container {
-  width: 100%;
+  /* width: 100%; */
   height: 10%;
   display: flex;
   /* column-gap: 10vw; */
@@ -975,7 +976,7 @@ p {
   align-content: center;
 }
 .slidecard {
-  width: 320px;
+  width: 30vw;
   background-color: #eee;
   color: black;
   border-radius: 25px;
@@ -987,10 +988,10 @@ p {
 .card-image {
   position: relative;
   /* text-align: center; */
-  width: 150px;
-  height: 150px;
+  width: 15vw;
+  height: 10vw;
   border-radius: 50%;
-  padding: 3px;
+  padding: 1vw;
   /* background-color: #fff; */
   /* object-fit: cover; */
   /* background-position: 200%; */
@@ -1017,7 +1018,7 @@ p {
 }
 .card-content,
 .image-content {
-  padding: 10px 14px;
+  padding: 1vw 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1030,28 +1031,28 @@ p {
   position: absolute;
   left: 0%;
   top: 0%;
-  /* width: 100%; */
-  /* height: 100%; */
-  background-color: #2233ed;
-  border-radius: 25px 25px 0px 25px;
+  width: 100%;
+  height: 100%;
+  background-color: #072b55;
+  border-radius: 1vw 1vw 0px 1vw;
 }
 .overlay::before,
 .overlay::after {
   content: "";
-  /* position: absolute; */
-  width: 40px;
-  height: 40px;
-  bottom: -40px;
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  bottom: -4vw;
   right: 0;
-  background-color: #2233ed;
+  background-color: #072b55;
 }
 .overlay::after {
-  border-radius: 0 25px 0 0;
+  border-radius: 0 2vw 0 0;
   background-color: rgb(238, 238, 238);
 }
 .slide-container {
-  max-width: 1120px;
-  width: 60%;
+  /* max-width: 1120px; */
+  /* width: 60%; */
   padding: 30px;
   margin: auto;
   /* background: #4ee3ed; */
@@ -1072,10 +1073,10 @@ p {
   text-align: center;
 }
 .card-content .btn {
-  padding: 8px 16px;
-  width: 50%;
-  border-radius: 6px;
-  margin: 14px;
+  padding: 1vw 1vw;
+  width: auto;
+  border-radius: 0.1vw;
+  margin: 1vw;
 }
 .card-image .card-img {
   height: 100%;
@@ -1310,7 +1311,9 @@ form {
     text-align: center;
   }
   .sections {
-    padding: 0 10vw;
+    margin: auto;
+    text-align: center;
+    padding: 3vw;
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
