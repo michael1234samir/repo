@@ -1468,6 +1468,15 @@ form {
     /* padding: 0; */
     /* margin: 0.5em; */
     /* width: 100%; */
+    font-family:'poppins',sans-serif;
+    font-size:18px;
+    line-height:1.5;
+    color:#333;
+  }
+  h1,h2,h4,h5,h6,h7,h3{
+    font-family:'Montserrat',sans-serif;
+    font-weight:bold;
+    letter-spacing:1px;
   }
   .section1 .left {
     /* width: 100%; */
@@ -1487,11 +1496,11 @@ form {
   }
   .section1 .left h4,
   .section1 .left h2 {
-    width: 100%;
+    /* width: 100%; */
     /* gap: 10px; */
     text-align: center;
     /* padding: 0.1em; */
-    /* margin-bottom: 2em; */
+    margin-bottom: 2em;
   }
   .left > * {
     > *:not(.image) {
@@ -1516,7 +1525,7 @@ form {
     /* padding: 20em; */
     text-align: center;
     /* display: 1fr; */
-    /* width: 100%; */
+    width: 100%;
     /* width: 60em; */
     /* margin: 10px; */
     /* gap: 5em; */
@@ -1580,7 +1589,7 @@ form {
   }
 
   .both {
-    width: 40%;
+    /* width: 40%; */
     flex-direction: column;
     /* width: 50em; */
     /* margin: 0px; */
@@ -1641,7 +1650,7 @@ form {
     /* gap: 0.4em; */
   }
   .section1 .btn {
-    width: 50em;
+    /* width: 50em; */
     /* padding: 10px 20px; */
   }
   .card > .btn {
@@ -1731,24 +1740,24 @@ form {
 
     flex-direction: column;
     /* gap: 10px; */
-    width: 100%;
+    /* width: 100%; */
     /* width: 200px; */
     justify-content: center;
     align-items: center;
   }
 
   .left .skill {
-    width: 100%;
+    /* width: 100%; */
     text-align: start;
     display: flex;
     /* width: 100%; */
     /* width: 1000px; */
-    margin: 0;
+    margin:1em;
     flex-direction: column;
     text-align: start;
     > * {
-      text-align: start;
-      margin: 0;
+      /* text-align: start; */
+      /* margin: 0; */
     }
   }
   .precentage {
@@ -1759,7 +1768,7 @@ form {
   }
 
   .precens {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     text-align: start;
     justify-content: space-around;
@@ -1792,13 +1801,18 @@ form {
   }
   .card {
     /* height: 10em; */
-    width: 20em;
-    padding: 4em;
+    /* width: 20em; */
+    /* padding: 4em; */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
     text-align: center;
     text-align: center;
   }
   .btn {
-    width: 100%;
+    /* width: 9document.write(document.write(););0%; */
   }
   .contactinside .socials {
     /* transform: translateX(140%); */
@@ -1808,7 +1822,13 @@ form {
     /* width: 300px; */
     /* margin-bottom: 100px; */
   }
-
+.parent-list {
+width:100%;
+/* padding:2em; */
+>*{
+  width:100%;
+}
+  }
   .contact {
     /* text-align: center; */
   }
@@ -1872,7 +1892,7 @@ form {
     /* width: 30em; */
   }
   .contact form {
-    width: 50%;
+    /* width: 50%; */
   }
   .slide-container{
     display: grid;
@@ -1883,35 +1903,54 @@ form {
     /* flex-direction: column; */
     /* padding:10em 0; */
   }
+  #navbar.close,#navbar.close ul{
+    width:10%;
+  }
+  .sections{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  align-items:center;
+  }
 }
 /* للموبايل والتابلت */
 @media (max-width: 992px) {
+  *{
+    box-sizing:border-box;
+  }
   body,
   html {
+    /* margin
+  :1em; */
+  /* display:block; */
+  width:fit-content;
+  /* padding:1em; */
     /* width: 10em; */
     /* max-width: 10em; */
-
-    text-align: start;
-    display: flex;
-    justify-content: start;
-    align-items: start;
+/* display:grid; */
+    /* text-align: start; */
+    /* display: flex; */
+    /* justify-content: start; */
+    /* align-items: start; */
   }
   .sections {
+    /* display:block */
     /* max-width: 1200px; */
     padding: 2em;
+    width:100%;
     /* margin: 2em; */
   }
   .image{
     width:50%;
   }
-
   .section1,
   .section2,
   .section3,
   .section4,
   .contact,
   .latest {
-    width: 80%;
+    /* width: 80%; */
     flex-direction: column;
     margin: 0;
     text-align: center;
@@ -1921,10 +1960,11 @@ form {
   .AboutMe,
   .contactleft,
   .contactright {
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
     text-align: center;
   }
+  
   .section2{
     display: flex;
     flex-direction: column;
@@ -1936,7 +1976,7 @@ form {
   .AboutMe p {
     width: 90%;
   }
-
+  
   .both {
     flex-direction: column;
     gap: 2em;
@@ -1946,19 +1986,79 @@ form {
     grid-template-columns: 1fr;
     width: 100%;
   }
-
+  
   .parent-list {
     grid-template-columns: 1fr;
   }
 
   .slidecard {
-    width: 90%;
+    width: 100%;
     margin: 1em auto;
   }
 
+  .btn{
+    /* padding:.8em 1em; */
+    /* width:1em; */
+  }
   input,
   textarea {
     width: 100%;
+  }
+  .parent-list {
+width:100%;
+padding:0;
+
+>*{
+  width:100%;
+  /* padding:10% 10%; */
+}
+  }
+  .both{
+    width:100%;
+    >*{
+      width:100%;
+
+    }
+    
+  }
+  .el{
+    size:10%;
+    padding:0;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+  }
+ .left .skill{
+  display:flex;
+    width:100%;
+>*{
+  margin:auto;
+  width:100%;
+}
+  }
+  #navbar.close{
+    height:100vh;
+  }
+  #navbar.close ul{
+    margin:0;
+    padding:2em;
+    width:10%;
+    height:100%;
+    /* padding:1em; */
+  }
+  .image,.image img{
+    width:80%;
+  }
+  .contact,.contact>*,.contact>*>*,form,.contact form>*,.contact form>*>*{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    justify-items:center;
+  
   }
 }
 
