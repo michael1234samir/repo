@@ -1475,13 +1475,14 @@ form {
     /* text-align: center; */
   }
   .sections {
-    margin: auto;
+    /* margin: auto; */
     /* width: 90%; */
     text-align: center;
     /* padding: 3em; */
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
     align-items: center;
   }
   .section1 .left h4,
@@ -1504,18 +1505,18 @@ form {
     margin: auto;
   }
   .left p {
-    color: black;
+    /* color: black; */
     /* width: 6em; */
   }
   .section1,
   .section2,
   .section3,
   .section4,
-  .contact {
+  .contact,.latest {
     /* padding: 20em; */
     text-align: center;
     /* display: 1fr; */
-    width: 100%;
+    /* width: 100%; */
     /* width: 60em; */
     /* margin: 10px; */
     /* gap: 5em; */
@@ -1523,21 +1524,22 @@ form {
     text-align: center;
     /* margin-bottom: 2em; */
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
     /* margin-top: 10em; */
-    margin-bottom: 10em;
+    /* margin-bottom: 10em; */
     > * {
-      width: 100%;
+      /* width: 100%; */
     }
     /* background: red; */
   }
   #navbar ul {
     /* width: 40px; */
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
   }
   #navbar {
     /* padding-right: 1em; */
@@ -1548,11 +1550,12 @@ form {
   }
   .AboutMe {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .AboutMe p {
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
   }
   form {
@@ -1561,7 +1564,7 @@ form {
   .section1 .image {
     order: -1;
     /* margin: auto; */
-    margin-top: 0;
+    /* margin-top: 0; */
   }
   .section4 {
     display: flex;
@@ -1569,60 +1572,63 @@ form {
     /* padding: 10em; */
     text-align: center;
     justify-content: center;
+    justify-items: center;
     /* align-items: center; */
     flex-direction: column;
     /* padding: 10px; */
-    margin: auto;
+    /* margin: auto; */
   }
 
   .both {
-    width: 50%;
+    width: 40%;
     flex-direction: column;
     /* width: 50em; */
     /* margin: 0px; */
     /* margin: auto; */
     justify-content: center;
-    text-align: center;
+    justify-items: center;
+    /* text-align: center; */
   }
   .both .left,
   .both .right {
-    width: 50em;
-    margin: auto;
+    /* width: 50em; */
+    /* margin: auto; */
   }
   .section1 .left,
   .section1 .left {
-    width: 90%;
-    flex-direction: column;
-    gap: 2em;
-    margin: 0;
+    /* width: 90%; */
+    /* flex-direction: column; */
+    /* gap: 2em; */
+    /* margin: 0; */
     /* width: 100%; */
   }
   .image {
-    width: 7em;
-    margin-top: 1em;
+
+    /* width: 7em; */
+    margin: 3em;
   }
   .card {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    margin: 0;
+    /* display: flex; */
+    /* align-content: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* text-align: start; */
+    /* margin: 0; */
 
     /* width: 30em; */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* padding: 1em; */
-    padding: 0;
+    /* padding: 0; */
   }
   html {
-    width: 100em;
-    padding: 1em;
+    /* width: 100em; */
+    /* padding: 1em; */
   }
   .card {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* text-align: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     /* width: 60em; */
     /* text-align: center; */
     /* gap: 0; */
@@ -1630,20 +1636,20 @@ form {
     /* margin: 0; */
   }
   .card > * {
-    margin: 0;
+    /* margin: 0; */
     /* width: 80em; */
-    gap: 0.4em;
+    /* gap: 0.4em; */
   }
   .section1 .btn {
     width: 50em;
     /* padding: 10px 20px; */
   }
   .card > .btn {
-    margin-top: 2em;
-    width: 10em;
+    /* margin-top: 2em; */
+    /* width: 10em; */
   }
   .card p {
-    margin-bottom: 0.1em;
+    /* margin-bottom: 0.1em; */
     /* text-align: start; */
   }
 
@@ -1651,27 +1657,27 @@ form {
     /* font-size: 0.4rem; */
   }
   .parent-list {
-    display: grid;
+    /* display: grid; */
     /* grid */
     /* grid-auto-columns: calc( 100% / 3px); */
     /* flex-direction: column; */
     /* margin: 10px; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     /* text-align: center; */
     /* width: fit-content; */
     /* width: 400px; */
     /* height: fit-content; */
   }
   .parent-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: auto; */
     /* gap: 100px; */
   }
   .card > * {
-    width: fit-content;
+    /* width: fit-content; */
     /* margin: 2em; */
     /* padding: f; */
   }
@@ -1679,19 +1685,20 @@ form {
     /* font-size: 1.9rem; */
   }
   .parent-list {
-    flex-direction: column;
+    /* flex-direction: column; */
     /* margin: auto; */
     /* padding: 10em; */
     /* width: 50em; */
     /* gap: 20px; */
     > card > * {
-      padding: 0;
-      margin: 0;
+      /* padding: 0; */
+      /* margin: 0; */
     }
   }
   .contact {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
+
   .contactleft,
   .contactinside,
   .contactinside,
@@ -1750,14 +1757,7 @@ form {
 
     /* width: 100%; */
   }
-  .slide-container {
-    display: flex;
-    padding: 12em;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-  }
+
   .precens {
     width: 100%;
     display: flex;
@@ -1788,7 +1788,7 @@ form {
     /* width: 100px; */
     width: 8em;
     height: 10em;
-    margin: 1em;
+    /* margin: 1em; */
   }
   .card {
     /* height: 10em; */
@@ -1802,33 +1802,33 @@ form {
   }
   .contactinside .socials {
     /* transform: translateX(140%); */
-    text-align: center;
+    /* text-align: center; */
   }
   .image {
     /* width: 300px; */
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
   .contact {
-    text-align: center;
+    /* text-align: center; */
   }
   .contactleft,
   .contactright {
     /* width: 100%; */
     /* width: 60em; */
-    margin: 0;
+    /* margin: 0; */
     /* width: 70%; */
-    margin: auto;
-    text-align: center;
+    /* margin: auto; */
+    /* text-align: center; */
   }
   .contactright {
-    padding: 1em;
+    /* padding: 1em; */
 
-    margin: auto;
+    /* margin: auto; */
     /* background-color: red; */
     /* width: 90%; */
     /* height: 90vh; */
-    text-align: center;
+    /* text-align: center; */
   }
   .btn {
   }
@@ -1839,8 +1839,8 @@ form {
     /* height: 30vh; */
   }
   .section4 {
-    margin: 0;
-    text-align: center;
+    /* margin: 0; */
+    /* text-align: center; */
   }
   .section1,
   .section2,
@@ -1850,7 +1850,7 @@ form {
   .section4,
   .contact,
   .parent-list {
-    padding: 0;
+    /* padding: 0; */
     /* margin: auto; */
     /* padding-inline: 20em; */
   }
@@ -1858,7 +1858,7 @@ form {
     /* text-align: start; */
   }
   .both .left h3 {
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
   }
 
   .contact {
@@ -1866,21 +1866,30 @@ form {
     flex-direction: column;
   }
   .contactleft {
-    width: 50%;
+    width: 50%;/
   }
   .slidecard {
-    width: 30em;
+    /* width: 30em; */
   }
   .contact form {
     width: 50%;
+  }
+  .slide-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(100%,1fr));
+    justify-content: center;
+    width:fit-content;
+    height: fit-content;
+    /* flex-direction: column; */
+    /* padding:10em 0; */
   }
 }
 /* للموبايل والتابلت */
 @media (max-width: 992px) {
   body,
   html {
-    width: 10em;
-    max-width: 10em;
+    /* width: 10em; */
+    /* max-width: 10em; */
 
     text-align: start;
     display: flex;
@@ -1888,9 +1897,12 @@ form {
     align-items: start;
   }
   .sections {
-    max-width: 1200px;
-    padding: 0;
-    margin: 0;
+    /* max-width: 1200px; */
+    padding: 2em;
+    /* margin: 2em; */
+  }
+  .image{
+    width:50%;
   }
 
   .section1,
@@ -1913,7 +1925,13 @@ form {
     align-items: center;
     text-align: center;
   }
-
+  .section2{
+    display: flex;
+    flex-direction: column;
+  }
+.AboutMe {
+   flex-direction: column;
+  }
   .section1 .left p,
   .AboutMe p {
     width: 90%;
