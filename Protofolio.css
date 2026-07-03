@@ -227,7 +227,7 @@ h3 {
   list-style: none;
 }
 #navbar li {
-  width: 3em;
+  width: fit-content;
   /* padding: 10px; */
   /* padding-left: 10px; */
   /* padding-bottom: 20px; */
@@ -289,7 +289,8 @@ h3 {
       background-color: var(--accent-color);
     }
     > a {
-      /* padding: 1em; */
+      width: 2em;
+      padding: 1em;
     }
     > a > svg:hover {
       /* fill: var(--accent-color); */
@@ -359,16 +360,20 @@ h3 {
   > svg {
   }
 }
-#navbar.close li:hover a::after {
+#navbar.close > ul > li > a:hover a::after {
   content: var(--li_name);
-  color: black;
+  color: white;
   position: fixed;
-  border-radius: 1px;
+  border-radius: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
-  left: 100px;
-  /* background-color: var(--secondary-color); */
-  width: fit-content;
-  padding: 10px;
+  left: 8em;
+  background-color: var(--secondary-color);
+  width: 4em;
+
+  padding: 0.5em 1em;
   /* height: 40px; */
 }
 #navbar a,
@@ -1960,7 +1965,7 @@ form {
   }
   #navbar.close,
   #navbar.close ul {
-    width: 10%;
+    width: 6%;
   }
   .sections {
     width: 100%;
@@ -2125,15 +2130,32 @@ form {
       width: 100%;
     }
   }
-  #navbar.close {
-    height: 100vh;
-  }
   #navbar.close ul {
     margin: 0;
-    padding: 2em;
-    width: 10%;
+    padding: 0em;
+    /* width: %; */
     height: 100%;
     /* padding:1em; */
+    > li {
+      border-radius: 1em 1em;
+      width: fit-content;
+      /* padding: 0.2em; */
+      > a {
+        width: fit-content;
+        padding: 2em;
+        > svg {
+          width: 10px;
+          font-size: 0.1em;
+        }
+      }
+    }
+  }
+
+  #navbar a,
+  #navbar .dropdown-btn,
+  #navbar .logo {
+    padding: 0;
+    font-size: 0.1em;
   }
   .image {
     width: 50%;
@@ -2185,5 +2207,32 @@ form {
     width: 2em;
     height: 2em;
     font-size: 1.2em;
+  }
+  #navbar.close ul {
+    margin: 0;
+    padding: 0em;
+    /* width: %; */
+    height: 100%;
+    /* padding:1em; */
+    > li {
+      border-radius: 1em 1em;
+      width: fit-content;
+      padding: 0.2em;
+      > a {
+        width: fit-content;
+        padding: 0.2em;
+        > svg {
+          width: 10px;
+          font-size: 0.1em;
+        }
+      }
+    }
+  }
+
+  #navbar a,
+  #navbar .dropdown-btn,
+  #navbar .logo {
+    padding: 0;
+    font-size: 0.1em;
   }
 }
