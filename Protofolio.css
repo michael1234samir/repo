@@ -1430,7 +1430,7 @@ textarea:focus {
   background-color: #e8f0fe;
 }
 .thanks {
-  /* width: 100%; */
+  width: 90%;
   padding: 1em;
   height: 1em;
   font-weight: bold;
