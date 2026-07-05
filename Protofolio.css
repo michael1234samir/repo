@@ -329,6 +329,11 @@ h3 {
 /* li > span {
   display: none;
 } */
+.sections > * {
+  animation: headingMask linear both;
+  animation-timeline: view();
+  animation-range: entry;
+}
 
 #navbar.close ul > li span {
   padding: 2em;
@@ -360,7 +365,7 @@ h3 {
   > svg {
   }
 }
-#navbar.close > ul > li > a:hover a::after {
+a::after {
   content: var(--li_name);
   color: white;
   position: fixed;
@@ -371,9 +376,18 @@ h3 {
   z-index: 1000;
   left: 8em;
   background-color: var(--secondary-color);
-  width: 4em;
-
-  padding: 0.5em 1em;
+  width: 0;
+  height: 0;
+  /* visibility: hidden; */
+  display: none;
+  /* padding: 0.5em 1em; */
+}
+a:hover::after {
+  /* content: var(--li_name); */
+  /* padding: 0.5em 1em; */
+  /* width: 10px; */
+  /* display: flex; */
+  /* visibility: visible; */
   /* height: 40px; */
 }
 #navbar a,
@@ -735,7 +749,7 @@ a:hover,
   top: -10px;
   left: -10px;
   border-radius: 50% 50%;
-  animation: animation 3s linear infinite alternate-reverse;
+  /* animation: animation 3s linear infinite alternate-reverse; */
   animation-delay: 1s;
 }
 @keyframes animation {
@@ -875,7 +889,7 @@ h1 {
 }
 .parent-list {
   display: grid;
-  animation: slidebottom 1s ease;
+  /* animation: slidebottom 1s ease; */
   /* display: grid; */
   /* gap: 3em; */
   flex: 1;
@@ -926,7 +940,7 @@ h1 {
   /* width: 3em; */
   /* height: 3em; */
   margin-bottom: 0.5em;
-  animation: slideleft 1s ease;
+  /* animation: slideleft 1s ease; */
   > svg {
     font-size: 2em;
     fill: var(--secondary-color);
@@ -947,25 +961,25 @@ h1 {
   /* font-size: 3rem; */
   /* width: 200px; */
   text-wrap: nowrap;
-  animation: slideright 4s ease infinite;
+  /* animation: slideright 4s ease infinite; */
   font-weight: bold;
 }
 .card h3 {
   font-size: 2em;
   font-weight: 600;
   /* margin-bottom: 2em; */
-  animation: slideleft 1s ease;
+  /* animation: slideleft 1s ease; */
 }
 .card p {
   /* font-size: 1em; */
 
-  animation: slideleft 1s ease;
+  /* animation: slideleft 1s ease; */
 }
 p {
-  animation: slideleft 1s ease;
+  /* animation: slideleft 1s ease; */
 }
 *:not(.image) {
-  animation: slidebottom 1s ease;
+  /* animation: slidebottom 1s ease; */
 }
 
 .section4 {
@@ -1465,6 +1479,59 @@ form {
   to {
     --angle: 360deg;
   }
+}
+@keyframes headingMask {
+  0% {
+    opacity: 0;
+    /* transform: translateY(90px) scale(1.6); */
+    /* letter-spacing: 18px; */
+    /* filter: blur(5px); */
+  }
+  65% {
+    /* transform: translateY(-8px) scale(1.03); */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    /* letter-spacing: 0; */
+    /* filter: blur(0); */
+  }
+}
+@keyframes projectReveal {
+  from {
+    opacity: 0;
+    transform: perspective(1600px) rotateY(35deg) rotateX(25deg)
+      translateY(150px) scale(0.55);
+    filter: blur(10px);
+  }
+  60% {
+    transform: rotateY(-5deg) scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0) rotateX(0) translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+.card,
+.slidecard {
+  animation: projectReveal both linear;
+  animation-timeline: view();
+}
+.card:nth-child(1) {
+  animation-range: 0% cover 30%;
+}
+.card:nth-child(2) {
+  animation-range: 0% cover 40%;
+}
+.card:nth-child(3) {
+  animation-range: 0% cover 50%;
+}
+.slidecard:nth-child(1) {
+  animation-range: 0% cover 30%;
+}
+.slidecard:nth-child(2) {
+  animation-range: 0% cover 40%;
 }
 @media (max-width: 1400px) {
   * {
