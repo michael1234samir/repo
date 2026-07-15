@@ -1,0 +1,181 @@
+body,html{
+    background-color: #0a0c12;
+    min-height: 100dvh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    min-width: 100dvw;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.hero{
+    text-wrap: balance;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    width: max-content;
+    margin: 0;
+    >.eyebrow{
+        font-size: 1vw;
+    }
+>h1{
+    >*{
+margin: 0;
+
+    }
+
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items:center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-weight: 700;
+    gap: 0;
+        text-wrap: balance;
+        /* font-size:clamp(2em,2vw,5.3em); */
+        font-size:clamp(2.5vw,4vw,5.3vw);
+        text-transform: capitalize;
+        >span{
+            margin: 0;
+            background: linear-gradient(to right,#56abd8 30%,#240a54 30% );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* display: inline; */
+        
+    }
+}
+.divider{
+        /* padding: clamp(1vw,1vw,1vw); */
+
+    /* width: 100%; */
+    margin: 0;
+    display: flex;
+    /* margin: 0; */
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    > span{
+        font-size: clamp(1vw,1vw,1vw);
+        margin: 0;
+    }
+}
+#carsoul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin: 0;
+    height: auto;
+    gap: 10vw;
+    /* min-height: 40dvh; */
+    >.trackl{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+text-transform: capitalize;
+position: relative;
+gap: 10vw;
+>.span{
+    border-radius: 4vw;
+    border: none;
+    position: sticky;
+    left: 3vw;
+    top: 0vw;
+    z-index: 100;
+    font-size:clamp(1.5vw,2vw,5.3vw);
+    /* margin: 20vw; */
+    /* margin: 0; */
+    /* background: linear-gradient(to right,#56abd8 30%,#240a54 30% ); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    background: linear-gradient(to right,#56abd8 30%,#240a54 30% );
+    padding: 1vw 2vw;
+ cursor: pointer;
+    /* display: block; */
+    transition: all .3s linear;
+
+}
+        >.track{
+            
+            min-height: 30dvh;
+            height: auto;
+    width: max-content;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+    justify-content: center;
+    align-items: center;
+    /* padding:1vw; */
+    /* flex-shrink: 0; */
+/* height: 40vh;  */
+gap: .1%  ;
+/* will-change: transform; */
+animation: anim 180s infinite ease both  ;
+/* animation-play-state: paused; */
+/* flex-wrap: nowrap; */
+>.item{
+    /* height: auto; */
+filter: grayscale(0.9);
+        flex-shrink: 1;
+        flex-grow: 1;
+    /* width: 20vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40vh; */
+    transition: all 3s ease;
+    height: 41vw;
+    >img{
+        display: block;
+        transition: all 3s ease;
+        border-radius: 11%;
+        object-fit: contain;
+        height: 50dvh;
+    /* width: 20vw; */
+    /* height: 31vw; */
+    
+}
+}
+}
+}
+}
+.track:hover{
+    /* filter: grayscale(1.3); */
+    animation-play-state: paused ;
+}
+
+@keyframes anim{
+    from{
+        /* transform:translateX(0vw); */
+    }
+    to{
+        transform:translateX(-50%);
+
+        /* padding-left: 100%; */
+    }
+}
+
+/* animation-play-state: paused; */
+
+.item:hover{
+            transform: scale(1.4);
+            filter: grayscale(1.7);
+            z-index: 100;
+    }
+    .span:hover{
+        transform: translateY(-10px);
+            transform: scale(1.06);
+
+    }

@@ -2,102 +2,28 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Translator Demo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Caveat', cursive;
-      text-align: center;
-      margin-top: 50px;
-    }
-    input, button {
-        outline: none;
-        border: none;
-        /* border: 1px solid; */
-        border-radius: 2vw;
-      font-size: 2vw;
-      padding: 3vw;
-      margin: 1vw;
-      background-color:#f0f0f0 ;
-    transition: transform .1s linear;
-    cursor: pointer;
-    box-sizing: border-box;
-    height: 7vw;
-    width: 70vw;
-    }
-    #result,h1 {
-      font-size: 2vw;
-      margin-top: 20px;
-      color: #333;
-
-    }
-    button{
-        background-color: aqua;
-    }
-button:hover{
-        border: .1vw solid;
-        transform: scale(.9);
-        background-color: rgb(26, 116, 117);
-
-    }
-    input:hover{
-        /* transform: scale(1.1); */
-background-color: white;
-border: .1vw solid;
-    }
-  </style>
+  <title>Quiz Generator</title>
+  <link rel="stylesheet" href="./jesusisgod.css">
 </head>
 <body>
-  <div class="flame"></div>
-<audio id="fireSound" src="fire.mp3"></audio>
+  <div class="hero">
+    <p class="eyebrow">
+      Portfolio - 2026
+    </p>
+  <h1>crafting <span>digital</span> <br> experiences </h1>
+  </div>
+<div id="carsoul">
+<div class="divider"><span>texh stack</span></div>
+  <!-- <div class="track">
+    <div class="item"><img src="" alt="" class="img"></div>
+</div> -->
 
-<style>
-.flame {
-  width: 60px;
-  height: 100px;
-  background: radial-gradient(circle at 50% 20%, orange, red 70%, transparent 80%);
-  border-radius: 50% 50% 50% 50%;
-  animation: flicker 0.3s infinite alternate;
-}
-@keyframes flicker {
-  from { transform: scale(1); opacity: 0.9; }
-  to   { transform: scale(1.1); opacity: 0.7; }
-}
-</style>
+</div>
 
-<script>
-const sound = document.getElementById("fireSound");
-document.querySelector(".flame").addEventListener("animationstart", () => {
-  sound.play();
-});
-</script>
+  
+  <!-- <h2>الأسئلة الناتجة:</h2>
+  <pre id="output"></pre> -->
 
-  <h1>مترجم بسيط</h1>
-  <input id="textInput" type="text" placeholder="اكتب كلمة بالعربي">
-  <button onclick="translate()">ترجم للإنجليزية</button>
-  <h2 id="result"></h2>
-
-  <script>
-    async function translateText(text, sourceLang, targetLang) {
-      const res = await fetch("https://de.libretranslate.com/translate", {
-        method: "POST",
-        body: JSON.stringify({
-          q: text,
-          source: sourceLang,
-          target: targetLang,
-          format: "text"
-        }),
-        headers: { "Content-Type": "application/json" },
-      });
-      const data = await res.json();
-      return data.translatedText;
-    }
-
-    async function translate() {
-      const input = document.getElementById("textInput").value;
-      const result = await translateText(input, "ar", "en");
-      document.getElementById("result").textContent = result;
-    }
-  </script>
+  <script type="module" src="jesusmichael.js"></script>
 </body>
 </html>
